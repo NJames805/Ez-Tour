@@ -9,4 +9,4 @@
 // https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
 //ApIKey: AIzaSyDRJbltlpTpzIrfUDFHiKwaaqZTnqe13W8
 
-GOOGLE_API_KEY = your_api_key_here
+GOOGLE_API_KEY = AIzaSyDRJbltlpTpzIrfUDFHiKwaaqZTnqe13W8
