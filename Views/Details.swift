@@ -45,7 +45,7 @@ private struct PhotoView: View {
     var body: some View {
         if let photos = place?.photos,
            let firstPhoto = photos.first {
-            AsyncImage(url: URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=\(firstPhoto.photo_reference)&key=AIzaSyDRJbltlpTpzIrfUDFHiKwaaqZTnqe13W8")) { phase in
+            AsyncImage(url: URL(string: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=\(firstPhoto.photo_reference)&key=\(Bundle.main.object(forInfoDictionaryKey: "GOOGLE_API_KEY") as? String ?? "")")) { phase in
                 switch phase {
                 case .empty:
                     ProgressView()

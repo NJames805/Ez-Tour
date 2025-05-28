@@ -19,6 +19,7 @@ Ez Tour is an iOS application that helps users discover and explore places aroun
 - Swift 5.5+
 - Core Location framework
 - MapKit framework
+- Google Places API key
 
 ## Installation
 
@@ -27,13 +28,18 @@ Ez Tour is an iOS application that helps users discover and explore places aroun
 git clone https://github.com/yourusername/ez-tour.git
 ```
 
-2. Open the project in Xcode:
+2. Set up your Google API key:
+   - Copy `Config.xcconfig.template` to `Config.xcconfig`
+   - Replace `your_api_key_here` in `Config.xcconfig` with your actual Google Places API key
+   - Make sure `Config.xcconfig` is added to your Xcode project
+
+3. Open the project in Xcode:
 ```bash
 cd ez-tour
 open Ez\ Tour.xcodeproj
 ```
 
-3. Build and run the project in Xcode
+4. Build and run the project in Xcode
 
 ## Usage
 
